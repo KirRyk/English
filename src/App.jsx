@@ -279,7 +279,7 @@ export default function App() {
           <div className="hero__media">
             <div className="photo-card">
               <img
-                src="/tutor-1.jpg"
+                src="/src/images/tutor-1.jpg"
                 alt="Репетитор по английскому языку"
                 className="photo-card__img"
               />
@@ -356,7 +356,7 @@ export default function App() {
             <div className="about__left">
               <div className="about-photo-wrap">
                 <img
-                  src="/tutor-2.jpg"
+                  src="/src/images/tutor-2.jpg"
                   alt="Ирина — преподаватель английского"
                   className="about-photo"
                 />
@@ -413,13 +413,13 @@ export default function App() {
                     className="doc-thumb"
                     onClick={() =>
                       setModalImage({
-                        src: "/diplom.jpg",
+                        src: "/src/images/diplom.jpg",
                         caption:
                           "Диплом МГЛУ — профильное лингвистическое образование",
                       })
                     }
                   >
-                    <img src="/diplom.jpg" alt="Диплом МГЛУ" />
+                    <img src="/src/images/diplom.jpg" alt="Диплом МГЛУ" />
                     <span>Диплом МГЛУ</span>
                   </button>
 
@@ -428,12 +428,12 @@ export default function App() {
                     className="doc-thumb"
                     onClick={() =>
                       setModalImage({
-                        src: "/diplom1.jpg",
+                        src: "/src/images/diplom1.jpg",
                         caption: "Сертификат и материалы курса подготовки к ЦТ",
                       })
                     }
                   >
-                    <img src="/diplom1.jpg" alt="Сертификат ЦТ" />
+                    <img src="/src/images/diplom1.jpg" alt="Сертификат ЦТ" />
                     <span>Материалы и сертификат ЦТ</span>
                   </button>
                 </div>
