@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 
+import tutor1 from "./images/tutor-1.jpg";
+import tutor2 from "./images/tutor-2.jpg";
+import diplom from "./images/diplom.jpg";
+import diplom1 from "./images/diplom1.jpg";
+
 export default function App() {
   const [formData, setFormData] = useState({
     name: "",
@@ -279,7 +284,7 @@ export default function App() {
           <div className="hero__media">
             <div className="photo-card">
               <img
-                src="/src/images/tutor-1.jpg"
+                src={tutor1}
                 alt="Репетитор по английскому языку"
                 className="photo-card__img"
               />
@@ -356,7 +361,7 @@ export default function App() {
             <div className="about__left">
               <div className="about-photo-wrap">
                 <img
-                  src="/src/images/tutor-2.jpg"
+                  src={tutor2}
                   alt="Ирина — преподаватель английского"
                   className="about-photo"
                 />
@@ -413,13 +418,13 @@ export default function App() {
                     className="doc-thumb"
                     onClick={() =>
                       setModalImage({
-                        src: "/src/images/diplom.jpg",
+                        src: diplom,
                         caption:
                           "Диплом МГЛУ — профильное лингвистическое образование",
                       })
                     }
                   >
-                    <img src="/src/images/diplom.jpg" alt="Диплом МГЛУ" />
+                    <img src={diplom} alt="Диплом МГЛУ" />
                     <span>Диплом МГЛУ</span>
                   </button>
 
@@ -428,12 +433,12 @@ export default function App() {
                     className="doc-thumb"
                     onClick={() =>
                       setModalImage({
-                        src: "/src/images/diplom1.jpg",
+                        src: diplom1,
                         caption: "Сертификат и материалы курса подготовки к ЦТ",
                       })
                     }
                   >
-                    <img src="/src/images/diplom1.jpg" alt="Сертификат ЦТ" />
+                    <img src={diplom1} alt="Сертификат ЦТ" />
                     <span>Материалы и сертификат ЦТ</span>
                   </button>
                 </div>
